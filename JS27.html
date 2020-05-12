@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript 1 Practice</title>
+</head>
+<!-- web page finishes loading! | onUnload | Everytime you refresh a page-->
+<body>
+   
+
+	
+</body> <!-- Object has two things: property and method -->
+<script type = "text/javascript">
+	function person(name, age){
+		this.name = name;
+		this.age = age;
+		this.yearsUntilRetire = yearsLeft; // add function without()
+	}
+
+	function yearsLeft(){
+		var numYears = 65 - this.age;
+		return numYears;
+	}
+
+	var bucky = new person("Jane", 24);
+	document.write(bucky.yearsUntilRetire()); //add () at the end
+	
+</script>
+
+</html>
