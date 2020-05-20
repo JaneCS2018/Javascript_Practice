@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript 1 Practice</title>
+</head>
+<!-- web page finishes loading! | onUnload | Everytime you refresh a page-->
+<body>
+   
+
+	
+</body> <!-- Object has two things: property and method -->
+<script type = "text/javascript">
+	function printTime(){
+		var now = new Date();
+		var hours = now.getHours();
+		var mins = now.getMinutes();
+		var seconds = now.getSeconds();
+
+		document.write(hours+":"+mins+seconds+"<br />");
+	}
+
+	setInterval("printTime()", 1000);
+</script>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript 1 Practice</title>
+</head>
+<!-- web page finishes loading! | onUnload | Everytime you refresh a page-->
+<body>
+  
+<form name="Jane">
+	<input type="checkbox" name="thebox" />
+	<input type="button" value="Press me!" onClick="validator()" />
+</form>
+	
+</body> <!-- Object has two things: property and method -->
+<script type = "text/javascript">
+	//validate if the checkbox is checked
+	function validator() {
+		if (document.Jane.thebox.checked){
+			alert("Yep, its checked!");
+		}
+		else{
+			alert("no its not checked!");
+		}
+	}
+</script>
+
+</html>
